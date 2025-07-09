@@ -1,0 +1,502 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgba(255, 255, 255, 0.758);
+  font-family: Outfit, Arial;
+  padding-top: 70px;
+}
+a {
+  display: inherit;
+}
+button {
+  font-family: Outfit, Arial;
+}
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8vh;
+  color: rgb(232, 117, 59);
+  background-color: white;
+  z-index: 100;
+}
+.lh {
+  flex: 1.5;
+}
+.header-p {
+  margin: 1vw;
+  font-size: 2vw;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.effect-div {
+  display: flex;
+  overflow: hidden;
+  background-color: white;
+  margin-top: -25px;
+  margin-left: 2vw;
+  height: 100%;
+}
+.source-header-p .header-span {
+  position: relative;
+  top: 4px;
+  font-size: 2rem;
+  animation: bounce_eff 0.8s ease both infinite alternate;
+  font-weight: bold;
+  font-family: Love Ya Like A Sister, Arial;
+}
+.source-header-p .header-span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.source-header-p .header-span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.source-header-p .header-span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.source-header-p .header-span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.source-header-p .header-span:nth-child(6) {
+  animation-delay: 0.7s;
+}
+.source-header-p .header-span:nth-child(7) {
+  animation-delay: 0.8s;
+}
+.source-header-p .header-span:nth-child(8) {
+  animation-delay: 0.9s;
+}
+.source-header-p .header-span:nth-child(9) {
+  animation-delay: 1s;
+}
+.source-header-p .header-span:nth-child(10) {
+  animation-delay: 1.1s;
+}
+.source-header-p .header-span:nth-child(11) {
+  animation-delay: 1.2s;
+}
+.source-header-p .header-span:nth-child(12) {
+  animation-delay: 1.3s;
+}
+@keyframes bounce_eff {
+  100% {
+    top: -10px;
+  }
+}
+.sp-h-1 {
+  color: rgb(3, 219, 3);
+}
+.sp-h-2 {
+  color: rgba(0, 0, 255, 0.836);
+}
+@keyframes check2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.rh {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.header-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 158, 109, 0.982);
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+.header-button:hover {
+  animation: letter_spacing_effect 2s linear forwards infinite;
+  color: rgb(244, 82, 2);
+}
+@keyframes letter_spacing_effect {
+  from {
+    letter-spacing: 0.6px;
+  }
+  to {
+    letter-spacing: 1.5px;
+  }
+}
+.about-div {
+  display: flex;
+  height: 70vh;
+}
+.about-p,
+.str-1 {
+  font-size: 2.5vw;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding: 1vw;
+  color: rgb(5, 113, 95);
+  line-height: 4vw;
+  font-family: Love Ya Like A Sister, Arial;
+}
+.str-1 {
+  height: 6vh;
+  width: 20vw;
+  margin-bottom: -3vw;
+  margin-top: 5vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(221, 115, 115);
+  animation: check2 5s steps(22) forwards, border_blink 0.5s steps(22) backwards;
+  font-family: Love Ya Like A Sister, Arial;
+}
+.about-img {
+  height: 60vh;
+  object-fit: contain;
+}
+.hr1 {
+  margin-bottom: 3vw;
+  border: 1.5px solid rgb(214, 182, 140);
+  animation: hr_effect 5s linear backwards infinite;
+}
+@keyframes hr_effect {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.collections-p {
+  font-size: 2.5vw;
+  color: rgb(214, 182, 140);
+  font-weight: bold;
+  animation: blink_effect 2s linear both infinite;
+  margin-bottom: 2vw;
+}
+@keyframes blink_effect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.collections-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1vw;
+  row-gap: 7vw;
+}
+.item-1 {
+  border: 2px solid rgb(217, 143, 14);
+  height: 50vh;
+  border-radius: 1vw;
+  transition: transform 2s;
+}
+.item-1:hover {
+  transform: translateY(-30px);
+}
+.img-div-img {
+  height: 35vh;
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.item-p {
+  color: rgb(202, 120, 13);
+  font-size: 1.5vw;
+  font-weight: bold;
+  animation: blink_effect 4s linear both infinite;
+}
+.price-p {
+  color: brown;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: check3 3s steps(22) forwards infinite,
+    border_blink 0.5s steps(22) forwards infinite;
+  border-right: 2px solid rgb(232, 117, 59);
+}
+@keyframes check3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes border_blink {
+  50% {
+    border-right-color: transparent;
+  }
+}
+.reviews-div {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.review-div {
+  height: 40vh;
+  margin: 5vw;
+  margin-top: 1vw;
+  border-radius: 3vw;
+  display: flex;
+}
+.l2 {
+  flex: 1;
+  border-radius: 15vw;
+  margin: 3vw;
+}
+.review-img {
+  height: 15vw;
+  width: 15vw;
+  border-radius: 30vw;
+}
+.r2 {
+  flex: 4;
+  border: 2px solid rgb(214, 182, 140);
+  border-radius: 30vw;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.review-p {
+  margin: 4vw;
+  width: 90%;
+  font-size: 2vw;
+  color: rgb(221, 115, 115);
+  font-family: Love Ya Like A Sister, Arial;
+  letter-spacing: 2px;
+  margin-bottom: 0vw;
+  font-weight: 600;
+}
+.review-user {
+  font-size: 2vw;
+  margin: 0;
+  color: rgb(202, 120, 13);
+  font-weight: bold;
+}
+.contact-div {
+  background-color: rgba(214, 182, 140, 0.299);
+  height: 36vh;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top-left-radius: 5vw;
+  border-top-right-radius: 5vw;
+  padding-top: 0.1px;
+}
+.contact-p {
+  font-size: 2vw;
+  margin: 0;
+  margin-top: 3vw;
+  color: rgb(115, 66, 3);
+}
+@media only screen and (min-width: 220px) and (max-width: 740px) and (orientation: portrait) {
+  body {
+    background-color: rgba(255, 255, 255, 0.758);
+    font-family: Outfit, Arial;
+    padding-top: 100px;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 14vh;
+    color: rgb(232, 117, 59);
+    background-color: white;
+    z-index: 100;
+    border-bottom: 2px solid rgba(214, 182, 140, 0.265);
+  }
+  .lh {
+    flex: 1.5;
+    text-align: center;
+  }
+  .header-p {
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 700;
+    margin-top: 4vw;
+  }
+  .effect-div {
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+    margin-top: -31px;
+    margin-left: 2vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .source-header-p .header-span {
+    position: relative;
+    top: 6px;
+    font-size: 8vw;
+    animation: bounce_eff 0.8s ease both infinite alternate;
+    font-weight: bold;
+    font-family: Love Ya Like A Sister, Arial;
+  }
+  .rh {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-button {
+    margin-top: -8vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(255, 158, 109, 0.982);
+    font-size: 4vw;
+    font-weight: 800;
+    font-family: Love Ya Like A Sister, Arial;
+  }
+  .about-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 70vh;
+  }
+  .about-p,
+  .str-1 {
+    font-size: 5vw;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 1vw;
+    color: rgb(5, 113, 95);
+    line-height: 7vw;
+    font-family: Love Ya Like A Sister, Arial;
+  }
+  .str-1 {
+    font-size: 6vw;
+    height: 6vh;
+    width: 20vw;
+    margin-bottom: -5vw;
+    margin-top: 5vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(221, 115, 115);
+    animation: check2 5s steps(22) forwards;
+    font-family: Love Ya Like A Sister, Arial;
+  }
+  .about-img {
+    height: 30vh;
+    object-fit: contain;
+  }
+  .hr1 {
+    margin-bottom: 6vw;
+    border: 1.5px solid rgb(214, 182, 140);
+    animation: hr_effect 4s linear backwards infinite;
+  }
+  .collections-p {
+    font-size: 6vw;
+    color: rgb(214, 182, 140);
+    font-weight: bold;
+    animation: blink_effect 4s linear both infinite;
+    margin-bottom: 2vw;
+  }
+  .collections-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1vw;
+    row-gap: 10vw;
+  }
+  .item-1 {
+    border: 2px solid rgb(217, 143, 14);
+    height: 57vh;
+    transition: transform 2s;
+    border-radius: 7vw;
+    margin: 0 3vw 0 3vw;
+  }
+  .item-1:hover {
+    transform: translateY(-30px);
+  }
+  .img-div-img {
+    height: 35vh;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .item-p {
+    color: rgb(202, 120, 13);
+    font-size: 6vw;
+    font-weight: bold;
+    animation: blink_effect 4s linear both infinite;
+  }
+  .price-p {
+    font-size: 5vw;
+    color: brown;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: check3 3s steps(22) forwards infinite,
+      border_blink 0.5s steps(22) forwards infinite;
+    border-right: 2px solid rgb(232, 117, 59);
+  }
+  .reviews-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3vw;
+  }
+  .review-div {
+    height: 22vh;
+    margin: 1vw;
+    margin-top: 4vw;
+    border-radius: 1vw;
+    display: flex;
+  }
+  .l2 {
+    flex: 1;
+    border-radius: 15vw;
+    margin: 3vw;
+  }
+  .review-img {
+    margin-top: 3vw;
+    border-radius: 20%;
+    animation: none;
+  }
+  .r2 {
+    flex: 4;
+    border-radius: 20vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+  }
+  .review-p {
+    margin: 4vw 4vw 0vw 4vw;
+    width: 90%;
+    font-size: 3vw;
+    color: rgb(221, 115, 115);
+    font-family: Love Ya Like A Sister, Arial;
+    letter-spacing: 1px;
+    margin-bottom: 0vw;
+    font-weight: 600;
+  }
+  .review-user {
+    font-size: 3.5vw;
+    margin: 0vw;
+    color: rgb(202, 120, 13);
+    font-weight: bold;
+  }
+  .contact-div {
+    background-color: rgba(214, 182, 140, 0.299);
+    position: relative;
+    height: 23vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top-left-radius: 5vw;
+    border-top-right-radius: 5vw;
+    padding-top: 0.1px;
+  }
+  .contact-p {
+    font-size: 4vw;
+    margin: 0;
+    margin-top: 3vw;
+    color: rgb(115, 66, 3);
+  }
+}
